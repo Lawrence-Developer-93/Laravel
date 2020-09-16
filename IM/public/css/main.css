@@ -1,20 +1,25 @@
-html,
-body {
-  background-color: #2f2f2f;
+html {
+  background: url(https://blog.herzing.ca/hubfs/becoming%20a%20programmer%20analyst%20lead-1.jpg);
+}
+
+html body {
+  width: 100%;
+  background-image: linear-gradient(45deg, black, transparent);
   color: #636b6f;
-  font-family: "Nunito", sans-serif;
+  font-family: sans-serif;
   font-weight: 200;
   height: 100vh;
   margin: 0;
 }
 
 .full-height {
-  height: 60vh;
+  height: 80vh;
 }
 
 .flex-center {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .position-ref {
@@ -32,30 +37,85 @@ body {
 }
 
 .title {
-  font-size: 70px;
-  width: 80%;
+  font-size: 40px;
+  font-weight: 300;
+  width: 55%;
   margin: auto;
 }
 
 .title .capture {
   color: #fff;
   padding: 50px;
-  border: 1px solid;
+  width: 70%;
+  margin: 0 auto;
 }
 
-.title p span {
-  color: #e9ff24;
+.title p .yellow {
+  color: yellow;
   font-weight: bold;
 }
 
-.links > a {
-  color: #636b6f;
-  padding: 0 25px;
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 0.1rem;
+.title p .underline {
+  text-decoration: underline;
+}
+
+.terms-container {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0 auto;
+}
+
+.terms-container .terms1 {
+  display: inline-block;
+  padding: 0 20px 0 20px;
+  border-right: 1px solid #fff;
+}
+
+.terms-container .terms1 a {
+  color: #fff;
   text-decoration: none;
-  text-transform: uppercase;
+}
+
+.terms-container .terms1 a:hover {
+  color: yellow;
+  text-decoration: none;
+}
+
+.terms-container .terms2 {
+  display: inline-block;
+  color: #fff;
+  padding: 0 20px 0 20px;
+  border-right: 1px solid #fff;
+}
+
+.terms-container .terms2 a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.terms-container .terms2 a:hover {
+  color: yellow;
+  text-decoration: none;
+}
+
+.terms-container .terms3 {
+  display: inline-block;
+  color: #fff;
+  padding: 0 20px 0 20px;
+}
+
+.terms-container .terms3 a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.terms-container .terms3 a:hover {
+  color: yellow;
+  text-decoration: none;
 }
 
 .m-b-md {
@@ -64,15 +124,1290 @@ body {
 
 .m-b-md .email-p {
   color: #fff;
-  font-size: 1em;
+  font-size: 0.7em;
 }
 
 .m-b-md form input {
   padding: 20px;
-  width: 400px;
+  width: 355px;
+  margin: 10px;
 }
 
-.m-b-md form button {
+.m-b-md .btn {
   padding: 20px;
+  width: 400px;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #2f2fac;
+  color: #fff;
+}
+
+.content .alert-danger {
+  color: red;
+  font-family: sans-serif;
+  margin: 20px;
+}
+
+.small {
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.copy {
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+  html {
+    background: url(https://blog.herzing.ca/hubfs/becoming%20a%20programmer%20analyst%20lead-1.jpg);
+  }
+
+  html body {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(45deg, black, transparent);
+    color: #636b6f;
+    font-family: "Nunito", sans-serif;
+    font-weight: 200;
+    margin: 0;
+  }
+
+  html .full-height {
+    height: 100vh;
+  }
+
+  html .title {
+    font-size: 22px;
+    font-weight: bold;
+    width: 100%;
+    margin: auto;
+    font-family: sans-serif;
+  }
+
+  html .flex-center {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+  }
+
+  html .full-height {
+    height: 100vh;
+  }
+
+  html .m-b-md form input {
+    padding: 20px;
+    width: 208px;
+    margin: 10px;
+    font-family: sans-serif;
+  }
+
+  html .m-b-md .btn {
+    padding: 20px;
+    width: 250px;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #2f2fac;
+    color: #fff;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+  }
+
+  html .title .capture {
+    color: #fff;
+    padding: 25px;
+  }
+
+  html .m-b-md .email-p {
+    color: #fff;
+    padding: 10px;
+  }
+
+  html .small {
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    width: 80%;
+    margin: auto;
+    font-family: sans-serif;
+  }
+
+  html .content .alert-danger {
+    color: red;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding: 10px;
+  }
+
+  html .copy {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+  html {
+    background: url(https://blog.herzing.ca/hubfs/becoming%20a%20programmer%20analyst%20lead-1.jpg);
+  }
+
+  html body {
+    width: 100%;
+    background-image: linear-gradient(45deg, black, transparent);
+    color: #636b6f;
+    font-family: "Nunito", sans-serif;
+    font-weight: 200;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .title {
+    font-size: 40px;
+    font-weight: bold;
+    width: 65%;
+    margin: auto;
+  }
+
+  .content .alert-danger {
+    color: red;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 823px) and (orientation: landscape) {
+  html {
+    background: url(https://blog.herzing.ca/hubfs/becoming%20a%20programmer%20analyst%20lead-1.jpg);
+  }
+
+  html body {
+    width: 100%;
+    background-image: linear-gradient(45deg, black, transparent);
+    color: #636b6f;
+    font-family: sans-serif;
+    font-weight: 200;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .full-height {
+    height: 100vh;
+  }
+
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+  }
+
+  .position-ref {
+    position: relative;
+  }
+
+  .top-right {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+  }
+
+  .content {
+    text-align: center;
+  }
+
+  .title {
+    font-size: 25px;
+    font-weight: 300;
+    width: 70%;
+    margin: auto;
+  }
+
+  .title .capture {
+    color: #fff;
+    padding: 50px;
+    height: 50%;
+    width: 81%;
+    margin: 0 auto;
+    margin-top: 15%;
+  }
+
+  .title p .yellow {
+    color: yellow;
+    font-weight: bold;
+  }
+
+  .title p .underline {
+    text-decoration: underline;
+  }
+
+  .terms-container {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 0 auto;
+  }
+
+  .terms-container .terms1 {
+    display: inline-block;
+    padding: 0 20px 0 20px;
+    border-right: 1px solid #fff;
+  }
+
+  .terms-container .terms1 a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .terms-container .terms1 a:hover {
+    color: yellow;
+    text-decoration: none;
+  }
+
+  .terms-container .terms2 {
+    display: inline-block;
+    color: #fff;
+    padding: 0 20px 0 20px;
+    border-right: 1px solid #fff;
+  }
+
+  .terms-container .terms2 a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .terms-container .terms2 a:hover {
+    color: yellow;
+    text-decoration: none;
+  }
+
+  .terms-container .terms3 {
+    display: inline-block;
+    color: #fff;
+    padding: 0 20px 0 20px;
+  }
+
+  .terms-container .terms3 a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .terms-container .terms3 a:hover {
+    color: yellow;
+    text-decoration: none;
+  }
+
+  .m-b-md {
+    margin-bottom: 30px;
+  }
+
+  .m-b-md .email-p {
+    color: #fff;
+    font-size: 0.7em;
+  }
+
+  .m-b-md form input {
+    padding: 20px;
+    width: 355px;
+    margin: 10px;
+  }
+
+  .m-b-md .btn {
+    padding: 20px;
+    width: 400px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #2f2fac;
+    color: #fff;
+  }
+
+  .content .alert-danger {
+    color: red;
+    font-family: sans-serif;
+    margin: 20px;
+  }
+
+  .small {
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+  }
+}
+
+@media only screen and (max-width: 731px) and (orientation: landscape) {
+  html {
+    background: url(https://blog.herzing.ca/hubfs/becoming%20a%20programmer%20analyst%20lead-1.jpg);
+  }
+
+  html body {
+    width: 100%;
+    background-image: linear-gradient(45deg, black, transparent);
+    color: #636b6f;
+    font-family: sans-serif;
+    font-weight: 200;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .full-height {
+    height: 100vh;
+  }
+
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+  }
+
+  .position-ref {
+    position: relative;
+  }
+
+  .top-right {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+  }
+
+  .content {
+    text-align: center;
+  }
+
+  .title {
+    font-size: 25px;
+    font-weight: 300;
+    width: 70%;
+    margin: auto;
+  }
+
+  .title .capture {
+    color: #fff;
+    padding: 50px;
+    height: 50%;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 15%;
+  }
+
+  .title p .yellow {
+    color: yellow;
+    font-weight: bold;
+  }
+
+  .title p .underline {
+    text-decoration: underline;
+  }
+
+  .terms-container {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 0 auto;
+  }
+
+  .terms-container .terms1 {
+    display: inline-block;
+    padding: 0 20px 0 20px;
+    border-right: 1px solid #fff;
+  }
+
+  .terms-container .terms1 a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .terms-container .terms1 a:hover {
+    color: yellow;
+    text-decoration: none;
+  }
+
+  .terms-container .terms2 {
+    display: inline-block;
+    color: #fff;
+    padding: 0 20px 0 20px;
+    border-right: 1px solid #fff;
+  }
+
+  .terms-container .terms2 a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .terms-container .terms2 a:hover {
+    color: yellow;
+    text-decoration: none;
+  }
+
+  .terms-container .terms3 {
+    display: inline-block;
+    color: #fff;
+    padding: 0 20px 0 20px;
+  }
+
+  .terms-container .terms3 a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .terms-container .terms3 a:hover {
+    color: yellow;
+    text-decoration: none;
+  }
+
+  .m-b-md {
+    margin-bottom: 30px;
+  }
+
+  .m-b-md .email-p {
+    color: #fff;
+    font-size: 0.7em;
+  }
+
+  .m-b-md form input {
+    padding: 20px;
+    width: 355px;
+    margin: 10px;
+  }
+
+  .m-b-md .btn {
+    padding: 20px;
+    width: 400px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #2f2fac;
+    color: #fff;
+  }
+
+  .content .alert-danger {
+    color: red;
+    font-family: sans-serif;
+    margin: 20px;
+  }
+
+  .small {
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+  }
+}
+
+@media only screen and (max-width: 720px) and (orientation: landscape) {
+  html {
+    background: url(https://blog.herzing.ca/hubfs/becoming%20a%20programmer%20analyst%20lead-1.jpg);
+  }
+
+  html body {
+    width: 100%;
+    background-image: linear-gradient(45deg, black, transparent);
+    color: #636b6f;
+    font-family: sans-serif;
+    font-weight: 200;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .full-height {
+    height: 90vh;
+  }
+
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .position-ref {
+    position: relative;
+  }
+
+  .top-right {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+  }
+
+  .content {
+    text-align: center;
+  }
+
+  .title {
+    font-size: 25px;
+    font-weight: 300;
+    width: 70%;
+    margin: auto;
+  }
+
+  .title .capture {
+    color: #fff;
+    padding: 50px;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .title p .yellow {
+    color: yellow;
+    font-weight: bold;
+  }
+
+  .title p .underline {
+    text-decoration: underline;
+  }
+
+  .terms-container {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 0 auto;
+  }
+
+  .terms-container .terms1 {
+    display: inline-block;
+    padding: 0 20px 0 20px;
+    border-right: 1px solid #fff;
+  }
+
+  .terms-container .terms1 a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .terms-container .terms1 a:hover {
+    color: yellow;
+    text-decoration: none;
+  }
+
+  .terms-container .terms2 {
+    display: inline-block;
+    color: #fff;
+    padding: 0 20px 0 20px;
+    border-right: 1px solid #fff;
+  }
+
+  .terms-container .terms2 a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .terms-container .terms2 a:hover {
+    color: yellow;
+    text-decoration: none;
+  }
+
+  .terms-container .terms3 {
+    display: inline-block;
+    color: #fff;
+    padding: 0 20px 0 20px;
+  }
+
+  .terms-container .terms3 a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .terms-container .terms3 a:hover {
+    color: yellow;
+    text-decoration: none;
+  }
+
+  .m-b-md {
+    margin-bottom: 30px;
+  }
+
+  .m-b-md .email-p {
+    color: #fff;
+    font-size: 0.7em;
+  }
+
+  .m-b-md form input {
+    padding: 20px;
+    width: 355px;
+    margin: 10px;
+  }
+
+  .m-b-md .btn {
+    padding: 20px;
+    width: 400px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #2f2fac;
+    color: #fff;
+  }
+
+  .content .alert-danger {
+    color: red;
+    font-family: sans-serif;
+    margin: 20px;
+  }
+
+  .small {
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+  }
+}
+
+@media only screen and (max-width: 667px) and (orientation: landscape) {
+  html {
+    background: url(https://blog.herzing.ca/hubfs/becoming%20a%20programmer%20analyst%20lead-1.jpg);
+  }
+
+  html body {
+    width: 100%;
+    background-image: linear-gradient(45deg, black, transparent);
+    color: #636b6f;
+    font-family: sans-serif;
+    font-weight: 200;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .full-height {
+    height: 90vh;
+  }
+
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+  }
+
+  .position-ref {
+    position: relative;
+  }
+
+  .top-right {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+  }
+
+  .content {
+    text-align: center;
+  }
+
+  .title {
+    font-size: 25px;
+    font-weight: 300;
+    width: 90%;
+    margin: auto;
+  }
+
+  .title .capture {
+    color: #fff;
+    padding: 20px;
+    height: 50%;
+    width: 78%;
+    margin: 0 auto;
+    margin-top: 25%;
+  }
+
+  .title p .yellow {
+    color: yellow;
+    font-weight: bold;
+  }
+
+  .title p .underline {
+    text-decoration: underline;
+  }
+
+  .terms-container {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 0 auto;
+  }
+
+  .terms-container .terms1 {
+    display: inline-block;
+    padding: 0 20px 0 20px;
+    border-right: 1px solid #fff;
+  }
+
+  .terms-container .terms1 a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .terms-container .terms1 a:hover {
+    color: yellow;
+    text-decoration: none;
+  }
+
+  .terms-container .terms2 {
+    display: inline-block;
+    color: #fff;
+    padding: 0 20px 0 20px;
+    border-right: 1px solid #fff;
+  }
+
+  .terms-container .terms2 a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .terms-container .terms2 a:hover {
+    color: yellow;
+    text-decoration: none;
+  }
+
+  .terms-container .terms3 {
+    display: inline-block;
+    color: #fff;
+    padding: 0 20px 0 20px;
+  }
+
+  .terms-container .terms3 a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .terms-container .terms3 a:hover {
+    color: yellow;
+    text-decoration: none;
+  }
+
+  .m-b-md {
+    margin-bottom: 30px;
+  }
+
+  .m-b-md .email-p {
+    color: #fff;
+    font-size: 0.7em;
+  }
+
+  .m-b-md form input {
+    padding: 20px;
+    width: 355px;
+    margin: 10px;
+  }
+
+  .m-b-md .btn {
+    padding: 20px;
+    width: 400px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #2f2fac;
+    color: #fff;
+  }
+
+  .content .alert-danger {
+    color: red;
+    font-family: sans-serif;
+    margin: 20px;
+  }
+
+  .small {
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+  }
+}
+
+@media only screen and (max-width: 653px) and (orientation: landscape) {
+  html {
+    background: url(https://blog.herzing.ca/hubfs/becoming%20a%20programmer%20analyst%20lead-1.jpg);
+  }
+
+  html body {
+    width: 100%;
+    background-image: linear-gradient(45deg, black, transparent);
+    color: #636b6f;
+    font-family: sans-serif;
+    font-weight: 200;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .full-height {
+    height: 90vh;
+  }
+
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+  }
+
+  .position-ref {
+    position: relative;
+  }
+
+  .top-right {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+  }
+
+  .content {
+    text-align: center;
+  }
+
+  .title {
+    font-size: 25px;
+    font-weight: 300;
+    width: 70%;
+    margin: auto;
+  }
+
+  .title .capture {
+    color: #fff;
+    padding: 50px;
+    height: 50%;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 70%;
+  }
+
+  .title p .yellow {
+    color: yellow;
+    font-weight: bold;
+  }
+
+  .title p .underline {
+    text-decoration: underline;
+  }
+
+  .terms-container {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 0 auto;
+  }
+
+  .terms-container .terms1 {
+    display: inline-block;
+    padding: 0 20px 0 20px;
+    border-right: 1px solid #fff;
+  }
+
+  .terms-container .terms1 a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .terms-container .terms1 a:hover {
+    color: yellow;
+    text-decoration: none;
+  }
+
+  .terms-container .terms2 {
+    display: inline-block;
+    color: #fff;
+    padding: 0 20px 0 20px;
+    border-right: 1px solid #fff;
+  }
+
+  .terms-container .terms2 a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .terms-container .terms2 a:hover {
+    color: yellow;
+    text-decoration: none;
+  }
+
+  .terms-container .terms3 {
+    display: inline-block;
+    color: #fff;
+    padding: 0 20px 0 20px;
+  }
+
+  .terms-container .terms3 a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .terms-container .terms3 a:hover {
+    color: yellow;
+    text-decoration: none;
+  }
+
+  .m-b-md {
+    margin-bottom: 30px;
+  }
+
+  .m-b-md .email-p {
+    color: #fff;
+    font-size: 0.7em;
+  }
+
+  .m-b-md form input {
+    padding: 20px;
+    width: 355px;
+    margin: 10px;
+  }
+
+  .m-b-md .btn {
+    padding: 20px;
+    width: 400px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #2f2fac;
+    color: #fff;
+  }
+
+  .content .alert-danger {
+    color: red;
+    font-family: sans-serif;
+    margin: 20px;
+  }
+
+  .small {
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+  }
+}
+
+@media only screen and (max-width: 640px) and (orientation: landscape) {
+  html {
+    background: url(https://blog.herzing.ca/hubfs/becoming%20a%20programmer%20analyst%20lead-1.jpg);
+  }
+
+  html body {
+    width: 100%;
+    background-image: linear-gradient(45deg, black, transparent);
+    color: #636b6f;
+    font-family: sans-serif;
+    font-weight: 200;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .full-height {
+    height: 90vh;
+  }
+
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+  }
+
+  .position-ref {
+    position: relative;
+  }
+
+  .top-right {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+  }
+
+  .content {
+    text-align: center;
+  }
+
+  .title {
+    font-size: 25px;
+    font-weight: 300;
+    width: 70%;
+    margin: auto;
+  }
+
+  .title .capture {
+    color: #fff;
+    padding: 20px;
+    height: 50%;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 30%;
+  }
+
+  .title p .yellow {
+    color: yellow;
+    font-weight: bold;
+  }
+
+  .title p .underline {
+    text-decoration: underline;
+  }
+
+  .terms-container {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 0 auto;
+  }
+
+  .terms-container .terms1 {
+    display: inline-block;
+    padding: 0 20px 0 20px;
+    border-right: 1px solid #fff;
+  }
+
+  .terms-container .terms1 a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .terms-container .terms1 a:hover {
+    color: yellow;
+    text-decoration: none;
+  }
+
+  .terms-container .terms2 {
+    display: inline-block;
+    color: #fff;
+    padding: 0 20px 0 20px;
+    border-right: 1px solid #fff;
+  }
+
+  .terms-container .terms2 a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .terms-container .terms2 a:hover {
+    color: yellow;
+    text-decoration: none;
+  }
+
+  .terms-container .terms3 {
+    display: inline-block;
+    color: #fff;
+    padding: 0 20px 0 20px;
+  }
+
+  .terms-container .terms3 a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .terms-container .terms3 a:hover {
+    color: yellow;
+    text-decoration: none;
+  }
+
+  .m-b-md {
+    margin-bottom: 30px;
+  }
+
+  .m-b-md .email-p {
+    color: #fff;
+    font-size: 0.7em;
+  }
+
+  .m-b-md form input {
+    padding: 10px;
+    width: 355px;
+    margin: 10px;
+  }
+
+  .m-b-md .btn {
+    padding: 10px;
+    width: 380px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #2f2fac;
+    color: #fff;
+  }
+
+  .content .alert-danger {
+    color: red;
+    font-family: sans-serif;
+    margin: 20px;
+  }
+
+  .small {
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+  }
+}
+
+@media only screen and (max-width: 568px) and (orientation: landscape) {
+  html {
+    background: url(https://blog.herzing.ca/hubfs/becoming%20a%20programmer%20analyst%20lead-1.jpg);
+  }
+
+  html body {
+    width: 100%;
+    background-image: linear-gradient(45deg, black, transparent);
+    color: #636b6f;
+    font-family: sans-serif;
+    font-weight: 200;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .full-height {
+    height: 90vh;
+  }
+
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+  }
+
+  .position-ref {
+    position: relative;
+  }
+
+  .top-right {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+  }
+
+  .content {
+    text-align: center;
+  }
+
+  .title {
+    font-size: 25px;
+    font-weight: 300;
+    width: 100%;
+    margin: auto;
+  }
+
+  .title .capture {
+    color: #fff;
+    height: 50%;
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 20%;
+  }
+
+  .title p .yellow {
+    color: yellow;
+    font-weight: bold;
+  }
+
+  .title p .underline {
+    text-decoration: underline;
+  }
+
+  .terms-container {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 0 auto;
+  }
+
+  .terms-container .terms1 {
+    display: inline-block;
+    padding: 0 20px 0 20px;
+    border-right: 1px solid #fff;
+  }
+
+  .terms-container .terms1 a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .terms-container .terms1 a:hover {
+    color: yellow;
+    text-decoration: none;
+  }
+
+  .terms-container .terms2 {
+    display: inline-block;
+    color: #fff;
+    padding: 0 20px 0 20px;
+    border-right: 1px solid #fff;
+  }
+
+  .terms-container .terms2 a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .terms-container .terms2 a:hover {
+    color: yellow;
+    text-decoration: none;
+  }
+
+  .terms-container .terms3 {
+    display: inline-block;
+    color: #fff;
+    padding: 0 20px 0 20px;
+  }
+
+  .terms-container .terms3 a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .terms-container .terms3 a:hover {
+    color: yellow;
+    text-decoration: none;
+  }
+
+  .m-b-md {
+    margin-bottom: 30px;
+  }
+
+  .m-b-md .email-p {
+    color: #fff;
+    font-size: 0.7em;
+    padding: 10px;
+    margin: 0;
+  }
+
+  .m-b-md form input {
+    padding: 10px;
+    width: 355px;
+    margin: 10px;
+  }
+
+  .m-b-md .btn {
+    padding: 10px;
+    width: 380px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #2f2fac;
+    color: #fff;
+  }
+
+  .content .alert-danger {
+    color: red;
+    font-family: sans-serif;
+    margin: 20px;
+  }
+
+  .small {
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+  }
 }
 
