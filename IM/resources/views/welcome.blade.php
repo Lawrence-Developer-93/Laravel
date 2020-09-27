@@ -1,7 +1,7 @@
 @extends('layouts.app')
     @section('content')
         <div class="title m-b-md">
-            <p class="capture">"How <span class="yellow"> you  </span>can <span class="underline">learn coding</span> <span class="yellow">fast </span>and get a <span class="yellow">job</span> that pays up to <span class="yellow">$100,000</span> per year..."</p>
+            <p class="capture">"How <span class="yellow"> you  </span>can <span class="underline">learn coding</span> <span class="yellow">fast </span>and get a <span class="yellow">job</span> the most efficient way.</p>
             <p class="email-p">Add Your Email Address Below</p>
             <div class="form-container">
                 {!! Form::open(['action' => 'PagesController@store', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
